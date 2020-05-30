@@ -2,7 +2,7 @@
 
 ## Pitch
 
-> The nature of Chromatic Scale **is** the nature of `12`
+> The nature of Chromatic Scale is the nature of number `12`
 
 In 12 Equal Temperament, The Chromatic Scale can be seen as:
 
@@ -18,7 +18,7 @@ C  C# D  D# E  F  F# G  G# A  A#  B
 C  Db D  Eb E  F  Gb G  Ab A  Bb  B
 ~~~
 
-- Or a Interval relative to a Note (Using any Note as `0`)
+- Or a Pitch Class relative to a Pitch Class (Using any Note as `0`)
 
 > For example, use `E` as `0`
 
@@ -51,12 +51,12 @@ Instead we using **Mod 12** and **Base 12** Numbers
 
 By default `C = 0` (Mod 12) and `C0 = 00` (Base 12)  
 
-This study is in 12ET  
+In 12ET  
 After Transposing, everything will sound similar  
 So Mod 12 and Base 12 in relative sense is also helpful  
 When doing this we may add `Note = 0` (Mod 12) and `Note = 00` (Base 12) e.g. `E = 0`
 
-When analysing a particular Scale or Chord,  
+When analyzing a particular Scale or Chord,  
 we often ignore the absolute Pitch of Notes in them  
 By default `Root Note = 0` (Mod 12) and `Lowest Root Note = 00` (Base 12)
 
