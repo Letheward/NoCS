@@ -4,20 +4,20 @@
 
 ### Laws of LyCS
 
-> `N = 7 * d`
+> `P = 7 * d`
 
-`N` is the result **N**ote  
+`P` is the result **P**itch   
 `d` is the LyCS **d**egree  
 
-> if `d` is even, `N = d`
+> if `d` is even, `P = d`
 
-> if `d` is odd, `N = 6 + d = d - 6`
+> if `d` is odd, `P = 6 + d = d - 6`
 
-> `d = 7 * N`
+> `d = 7 * P`
 
 ### LyCS Analyze
 
-> `7 = 6 + 1`, `N = 7 * d = 6 * d + d`
+> `7 = 6 + 1`, `P = 7 * d = 6 * d + d`
 
 ~~~
 7 * 0  = 6 * 0  + 0
@@ -35,10 +35,10 @@
 7 * 12 = 6 * 12 + 12
 ~~~
 
-> If `d` is even, `N = 7 * d = 6 * d + d = d`
+> If `d` is even, `P = 7 * d = 6 * d + d = d`
 > 
-> If `d` is odd, `N = 7 * d = 6 * ( d - 1 ) + 6 + d = 6 + d`  
-> `N = 7 * d = 6 * ( d + 1 ) - 6 + d = d - 6`
+> If `d` is odd, `P = 7 * d = 6 * ( d - 1 ) + 6 + d = 6 + d`  
+> `P = 7 * d = 6 * ( d + 1 ) - 6 + d = d - 6`
 
 > When `d <= 6`
 
@@ -57,7 +57,7 @@ Form Lydian: 0 2 4 6 7 9 11
 > When `d > 6`
 
 > `d = 6 + x`  
-> If `d` is odd, `N = 7 * d = 6 * ( d - 1 ) + 6 + ( 6 + x ) = x`
+> If `d` is odd, `P = 7 * d = 6 * ( d - 1 ) + 6 + ( 6 + x ) = x`
 
 ~~~
 6 * 7  + 7  = 6 + ( 6 + 1 ) = 1
@@ -104,11 +104,11 @@ Form Lydian: 0 2 4 6 7 9 11
 7 * 12 = 0
 ~~~
 
-> We can see if `7 * d = N`, `7 * N = d`
+> We can see if `7 * d = P`, `7 * N = d`
 
-> If `d` is even, `N = 7 * d = 6 * d + d = d`
+> If `d` is even, `P = 7 * d = 6 * d + d = d`
 >
-> If `d` is odd, `N = 7 * d = 6 * ( d - 1 ) + 6 + d = 6 + d`  
+> If `d` is odd, `P = 7 * d = 6 * ( d - 1 ) + 6 + d = 6 + d`  
 > `7 * N = 7 * ( 6 + d ) = 7 * 6 + 7 * d`   
 > `= ( 7 * 6 + d * 6 ) + d = (( 7 + d ) * 6) + d = d`
 
@@ -116,19 +116,19 @@ Form Lydian: 0 2 4 6 7 9 11
 
 ### Laws of LoCS
 
-> `N = 5 * d`
+> `P = 5 * d`
 
-`N` is the result **N**ote  
+`P` is the result **P**itch  
 `d` is the LoCS **d**egree  
 
-> If `d` is even, `N = - d`
+> If `d` is even, `P = - d`
 
-> If `d` is odd, `N = 6 - d`
+> If `d` is odd, `P = 6 - d`
 
 > When `d = 3 * k`, (`k` is natural number)  
-> `N = d`
+> `P = d`
 
-> `d = 5 * N`
+> `d = 5 * P`
 
 ### LoCS Analyze
 
@@ -214,19 +214,19 @@ Form Locrian: 0 1 3 5 6 8 10
 5 * 12 = 0
 ~~~
 
-> We can see if `5 * d = N`, `5 * N = d`
+> We can see if `5 * d = P`, `5 * N = d`
 
-> If `d` is even, `N = 5 * d = 6 * d - d = - d`  
+> If `d` is even, `P = 5 * d = 6 * d - d = - d`  
 > `5 * N = 5 * ( - d ) = 6 * ( - d ) - 1 * ( - d ) = d`
 >
-> If `d` is odd, `N = 5 * d = 6 * d - d = 6 * ( d - 1 ) + 6 - d = 6 - d`   
+> If `d` is odd, `P = 5 * d = 6 * d - d = 6 * ( d - 1 ) + 6 - d = 6 - d`   
 > `5 * ( 6 - d ) = 5 * 6 - 5 * d = 5 * 6 - ( 6 - 1 ) * d`  
 > `= 6 * 5 - 6 * d + d = 6 * ( 5 - d ) + d = d`
 
 > And if `d = 3 * k`, (`k` is natural number)  
-> `N = d`
+> `P = d`
 
-> `N = 5 * d = ( 4 + 1 ) * d = 4 * 3 * k + d = d`
+> `P = 5 * d = ( 4 + 1 ) * d = 4 * 3 * k + d = d`
 
 ---
 
