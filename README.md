@@ -1,4 +1,4 @@
 # NoCS
 The Nature of Chromatic Scale
 
-A study of 12TET properities in tonal harmony context.
+A study of note properities in 12TET tonal harmony context.

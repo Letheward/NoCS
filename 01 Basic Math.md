@@ -1,41 +1,102 @@
 # Basic Math In Chromatic Scale
 
-## Pitch
+## Pitch as Number
 
-> The nature of Chromatic Scale is the nature of number `12`
+> What's the distance between `C` and `E` ?   
 
-In 12 Equal Temperament, The Chromatic Scale can be seen as:
+> A Major Third apart, that's because we memorize it that way.
 
-`0 1 2 3 4 5 6 7 8 9 10 11`
-or
-`0 1 2 3 4 5 6 7 8 9 T E`
+> What about `G` and `B` ? `F#` and `A#` ? `Db` and `F` ?
 
-- A number in that sequence can represent a Pitch Class
+Naming Notes with letters is confusing and hard to calculate,  
+instead we'll using **Mod 12** and **Base 12** Numbers.
 
-~~~
-0  1  2  3  4  5  6  7  8  9  10  11  
-C  C# D  D# E  F  F# G  G# A  A#  B
-C  Db D  Eb E  F  Gb G  Ab A  Bb  B
-~~~
-
-- Or a Pitch Class relative to a Pitch Class (Using any Note as `0`)
-
-> For example, use `E` as `0`
+- Mod 12 number can represent Pitch Class
 
 ~~~
-0  1  2  3  4  5  6  7  8  9  10  11  
-E  F  F# G  G# A  A# B  C  C#  D  D# 
-E  F  Gb G  Ab A  Bb B  C  Db  D  Eb 
+0  1  2  3  4  5  6  7  8  9  10(T) 11(E)  
+C  C# D  D# E  F  F# G  G# A  A#    B
+C  Db D  Eb E  F  Gb G  Ab A  Bb    B
 ~~~
 
-- 12 base number can be use to represent Absolute Pitch or Interval
+By default `C = 0` (Mod 12)
+
+- Base 12 number can represent Absolute Pitch
 
 ~~~
 C4: 40
 Ab5: 58
 B3: 3E
 F#10: T6
+~~~
 
+By default `C0 = 00` (Base 12).  
+
+---
+
+In 12TET, Transposing won't change the relations of Notes,    
+so Mod 12 and Base 12 in relative sense is also helpful.  
+When doing this we may add `Note = 0` (Mod 12) and `Note = 00` (Base 12). 
+
+For example:
+
+- `E = 0` :
+
+~~~
+0  1  2  3  4  5  6  7  8  9   10(T) 11(E)  
+E  F  F# G  G# A  A# B  C  C#  D     D# 
+E  F  Gb G  Ab A  Bb B  C  Db  D     Eb 
+~~~
+
+- `Bb2 = 00` :
+
+~~~
+C3: 02
+A4: 1E
+G1: -13
+~~~
+
+When analyzing a particular Scale or Chord,  
+we often ignore the absolute Pitch of Notes in them  
+By default `Root Note = 0` (Mod 12) and `Lowest Root Note = 00` (Base 12)
+
+## Set of Pitches
+
+{}
+
+
+
+## Doing Math 
+
+> The Nature of Chromatic Scale is the nature of number `12`
+
+Pitch Class:
+
+- `Pitch Class - Pitch Class = Interval Class`
+
+~~~
+D - G = 2 - 7 = 7 (Mod 12) also Pure Fifth
+G - D = 7 - 2 = 5 (Mod 12) also Pure Fourth
+~~~
+
+- `Pitch Class +/- Interval Class = Pitch Class`
+
+~~~
+D + 5 = 2 + 5 = 7 (Mod 12) also G
+D - 7 = 2 - 7 = 7 (Mod 12) also G
+~~~
+
+- `Interval Class + Interval Class = Interval Class`
+
+~~~
+7 + 5 = 0 (Mod 12) A Octave
+~~~
+
+---
+
+Absolute Pitch:
+
+~~~
 D#7 - Gb3 = 73 - 36 = 39 (base 12) = 45 (base 10)
 Bb5 - E6 = 5T - 64 = -6
 
@@ -44,45 +105,6 @@ C4 - A4 = 40 - 49 = -9
 B5 - A4 = 5E - 49 = 12 (base 12) = 14 (base 10)
 ~~~
 
-Naming Notes with letters is confusing and hard to calculate  
-So we **won't using traditional note names** in analyzing
-
-Instead we using **Mod 12** and **Base 12** Numbers
-
-By default `C = 0` (Mod 12) and `C0 = 00` (Base 12)  
-
-In 12ET  
-After Transposing, everything will sound similar  
-So Mod 12 and Base 12 in relative sense is also helpful  
-When doing this we may add `Note = 0` (Mod 12) and `Note = 00` (Base 12) e.g. `E = 0`
-
-When analyzing a particular Scale or Chord,  
-we often ignore the absolute Pitch of Notes in them  
-By default `Root Note = 0` (Mod 12) and `Lowest Root Note = 00` (Base 12)
-
----
-
-## Mod 7
-
-~~~
-0 1 2 3 4 5 6
-
-0 2 4 6 1 3 5
-
-0 3 6 2 5 1 4
-
-0 4 1 5 2 6 3
-
-0 5 3 1 6 4 2
-
-0 6 5 4 3 2 1
-~~~
-
-> Quintal Sequence `4` is the reverse of Quartal Sequence `3`
-
-> Sixth Sequence `5` is the reverse of Tertian Sequence `2`
-
-> Seventh Sequence `6` is the reverse of Original Sequence `1`
 
 ## Interval Cycles
 
@@ -307,3 +329,25 @@ Interval Cycle as Clock
      5     7
         6
 ~~~
+
+## Mod 7
+
+~~~
+0 1 2 3 4 5 6
+
+0 2 4 6 1 3 5
+
+0 3 6 2 5 1 4
+
+0 4 1 5 2 6 3
+
+0 5 3 1 6 4 2
+
+0 6 5 4 3 2 1
+~~~
+
+> Quintal Sequence `4` is the reverse of Quartal Sequence `3`
+
+> Sixth Sequence `5` is the reverse of Tertian Sequence `2`
+
+> Seventh Sequence `6` is the reverse of Original Sequence `1`
