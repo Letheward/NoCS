@@ -60,11 +60,25 @@ When analyzing a particular Scale or Chord,
 we often ignore the absolute Pitch of Notes in them  
 By default `Root Note = 0` (Mod 12) and `Lowest Root Note = 00` (Base 12)
 
-## Set of Pitches
+## Set of Notes
 
-{}
+- Pitch Class:
 
+~~~
+C Major Chord: {0, 4, 7}
+A Minor Chord: {9, 0, 4}
+C Ionian: {0, 2, 4, 5, 7, 9, 11}
+D Dorian: {2, 4, 5, 7, 9, 11, 0} (C = 0)
+D Dorian: {0, 2, 3, 5, 7, 9, 10} (D = 0)
+~~~
 
+- Absolute Pitch:
+
+~~~
+C4, E4, G4: [40, 44, 47]
+C2, G3, E4: [20, 37, 44]
+A4, C5, E5: [00, 03, 07] (A4 = 00)
+~~~
 
 ## Doing Math 
 
@@ -75,32 +89,84 @@ Pitch Class:
 - `Pitch Class - Pitch Class = Interval Class`
 
 ~~~
-D - G = 2 - 7 = 7 (Mod 12) also Pure Fifth
-G - D = 7 - 2 = 5 (Mod 12) also Pure Fourth
+D - G = 2 - 7 = 7 (Mod 12) Pure Fifth
+G - D = 7 - 2 = 5 (Mod 12) Pure Fourth
 ~~~
 
 - `Pitch Class +/- Interval Class = Pitch Class`
 
 ~~~
-D + 5 = 2 + 5 = 7 (Mod 12) also G
-D - 7 = 2 - 7 = 7 (Mod 12) also G
+D + 5 = 2 + 5 = 7 (Mod 12) G
+D - 7 = 2 - 7 = 7 (Mod 12) G
 ~~~
 
-- `Interval Class + Interval Class = Interval Class`
+- `Interval Class +/- Interval Class = Interval Class`
 
 ~~~
 7 + 5 = 0 (Mod 12) A Octave
+7 - 3 = 4 (Mod 12) A Major Third
+~~~
+
+- `Set of Pitch - Pitch Class = Set of Pitch`
+
+~~~
+Dm7 - D: {2, 5, 9, 0} - 2 = {0, 3, 7, 10} (D = 0) 
+General m7 Chord 
+
+Gm - C (G = 0): {0, 3, 7} - 5 = {7, 10, 2} (C = 0)
+Gm in C context
+~~~
+
+- `Set of Pitch +/- Interval Class = Set of Pitch`
+
+~~~
+D - C = 2 - 0 = 2
+CMaj7 + 2 = {0, 4, 7, 11} + 2 = {2, 6, 9, 1} DMaj7 (C = 0)
 ~~~
 
 ---
 
 Absolute Pitch:
 
+- `Note - Note = Distance`
+
 ~~~
-D#7 - Gb3 = 73 - 36 = 39 (base 12) = 45 (base 10)
+D#7 - Gb3 = 73 - 36 = 39 (Base 12) = 45 (Base 10)
 Bb5 - E6 = 5T - 64 = -6
 
 reference = A4 = 440Hz = 49
 C4 - A4 = 40 - 49 = -9
-B5 - A4 = 5E - 49 = 12 (base 12) = 14 (base 10)
+B5 - A4 = 5E - 49 = 12 (Base 12) = 14 (Base 10)
+~~~
+
+- `Note +/- Distance = Note`
+
+~~~
+C3 + 10 = 30 + 10 = 40 (Base 12) C4
+A4 - 5  = 49 - 5 = 44 (Base 12) E4
+~~~
+
+- `Distance +/- Distance = Distance`
+
+~~~
+A4 - C4 = 49 - 40 = 9
+C4 - C3 = 40 - 30 = 10 (Base 12)
+10 + 9 = 19 (Base 12)
+
+A4 - C4 = 49 - 40 = 9
+A4 - D4 = 49 - 42 = 7
+9 - 7 = 2
+D4 - C4 = 2
+~~~
+
+- `Set of Notes - Notes = Set of Distances`
+
+~~~
+C4, E4, G4 - G3 = [40, 44, 47] - 37 = 5, 9, 10 (Base 12)
+~~~
+
+- `Set of Notes +/- Distance = Set of Notes`
+
+~~~
+A2, B2, C3 + 6 = [29, 2E, 30] + 6 = [33, 35, 36] Eb, F, Gb
 ~~~
