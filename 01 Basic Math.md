@@ -159,7 +159,7 @@ A4 - D4 = 49 - 42 = 7
 D4 - C4 = 2
 ~~~
 
-- `Set of Notes - Notes = Set of Distances`
+- `Set of Notes - Note = Set of Distances`
 
 ~~~
 C4, E4, G4 - G3 = [40, 44, 47] - 37 = 5, 9, 10 (Base 12)
