@@ -1,4 +1,4 @@
-# Basic Math In Chromatic Scale
+# Basic Concepts
 
 ## Pitch as Number
 
