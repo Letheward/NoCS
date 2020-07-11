@@ -92,7 +92,7 @@ Name ET    Just     Difference
 S
 Base On Difference
 
-LyCs:
+LyCS:
 `0 7 2 11 4 9 6`
 LoCS:
 `0 5 10 1 8 3 6`
