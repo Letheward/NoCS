@@ -100,42 +100,6 @@ IC`5` form Locrian Chromatic Scale (LoCS)
 | Octave  | 0 | 0 | 1 | 1 | 1 | 2 | 2 | 2 | 3 | 3 | 4 | 4 |
 
 ---
-## Properities of IC`5` and IC`7`
-
-- Mid-points of two Interval Cycles are also the mid-point of Chromatic Scale
-
-> Tritone: `12 / 2 = 6`  
-
-~~~
-( 7 * 12 ) / 2 = ( 6 + 1 ) * 12 / 2
-
-( 5 * 12 ) / 2 = ( 6 - 1 ) * 12 / 2
-
-6 * 12 / 2 = 3 * 12
-
-1 * 12 / 2 = 12 - ( 1 * 12 / 2 ) = 6
-~~~
-
-- Black Keys Form Pentatonic
-
-Start from `F`
-
-`0 7 2 9 4 11 6` is Lydian, and `F` Lydian have all the white keys  
-The rest is black keys
-
-> `7 * 7 = 1`
-
-~~~
-7 * 7  = 7 * (7 + 0) = 7 * 7 + 7 * 0 = 7 * 0 + 1 = 0 + 1
-7 * 8  = 7 * (7 + 1) = 7 * 7 + 7 * 1 = 7 * 1 + 1 = 7 + 1
-7 * 9  = 7 * (7 + 2) = 7 * 7 + 7 * 2 = 7 * 2 + 1 = 2 + 1
-7 * 10 = 7 * (7 + 3) = 7 * 7 + 7 * 3 = 7 * 3 + 1 = 9 + 1
-7 * 11 = 7 * (7 + 4) = 7 * 7 + 7 * 4 = 7 * 4 + 1 = 4 + 1
-~~~
-
-`0 7 2 9 4` is Major Pentatonic
-
----
 
 ## Interval Cycle as Clock
 
