@@ -27,7 +27,49 @@ Locrian: `-`
 
 ---
 
-## Pythagorean tuning
+## Polarity Label
+
+~~~
+0 7 2 9 4 11 6
+0 1 2 3 4 5  6
+
+0 5 10 3 8 1 6
+0 1 2  3 4 5 6
+~~~
+
+- Dorian 
+
+`0 2 3 5 7 9 10` > `0 7 2 9  0 5 10 3`
+
+`0123-0123`
+
+- Random Set
+
+`0 1 6 7 8 10` > `0 7 6   0 10 8 1 6`
+
+`016-02456`
+
+the reverse
+
+- 
+
+`025-0134`
+
+`0 2 11    0 5 3 8`
+
+`0 2 3 5 8 11`
+
+- 
+
+`0235-0235`
+
+`0 2 9 11  0 10 3 1`
+
+`0 1 2 3 9 10 11`
+
+## Weighting
+
+### Pythagorean tuning
 
 - Perfect Fifth is Ratio `3:2`
 
@@ -69,7 +111,9 @@ so the number higher in LyCS/LoCS is less LyCS/LoCS-ish
 
 thus we can **Weight** every number
 
-## Just Intonation
+---
+
+### Just Intonation
 
 Using Popular 5-limit Just Intonation
 
@@ -96,6 +140,28 @@ LyCS:
 `0 7 2 11 4 9 6`
 LoCS:
 `0 5 10 1 8 3 6`
+
+---
+
+### Value 3rds and 7ths
+
+`+`
+~~~
+0 1 2 3 4 5  6
+0 7 2 9 4 11 6
+0 1 2 3 3 2  1
+~~~
+
+`-`
+~~~
+0 1 2  3 4 5 6
+0 5 10 3 8 1 6
+0 1 2  3 3 2 1
+~~~
+
+`6` > have `7` = `1`  
+have `5` = `-1`  
+have `5` and `7`/nor `5` or `7` = `0`  
 
 ## Polarity Index (PI)
 
@@ -279,6 +345,44 @@ Augmented Scale: `2 + 5 + 3 - 1 - 2 = + 7`
 
 `0 1 4 5 8 9`: `2 + 1 - 3 - 5 - 2 = - 7`
 
+- Model 5 (Value 3rds and 7ths)
+
+H-W Dim: `0 1 3 4 6 7 9 10`
+
+`0 -2 -3 +3 +1 +1 +3 -2 = 1`
+
+W-H Dim: `0 2 3 5 6 8 9 11`
+
+`0 +2 -3 -1 -1 -3 +3 +2 = -1`
+
+Lydian: `0 2 4 6 7 9 11`
+
+`0 +2 +3 +1 +1 +3 +2 = 12`
+
+Ionian: `0 2 4 5 7 9 11`
+
+`0 +2 +3 -1 +1 +3 +2 = 10`
+
+Mixolydian: `0 2 3 5 7 9 10`
+
+`0 +2 +3 -1 +1 +3 -2 = 4`
+
+Dorian: `0 2 3 5 7 9 10`
+
+`0 +2 -3 -1 +1 +3 -2 = 0`
+
+Lydian Dominant: `0 2 3 6 7 9 10`
+
+`0 +2 +3 +1 +1 +3 -2 = 8`
+
+Whole Tone: `0 2 4 6 8 10`
+
+`0 +2 +3 +0 -3 -2 = 0`
+
+Harmonic Major: `0 2 4 5 7 8 11`
+
+`0 +2 +3 -1 +1 -3 +2 = 4`
+
 
 ## Polar Ratio (PR)
 
@@ -313,6 +417,10 @@ Whole-Half Diminished: `4:4`
 
 Chromatic Scale: `6:6`
 
+
+## Mirror Scale
+
+
 ## Neutral Scale
 
 Neutral Scale's Mirror Scale is Itself
@@ -338,7 +446,6 @@ Neutral Scale's Mirror Scale is Itself
 Neutral Scale's PI is always `0`, PR `= 1:1`
 
 
-
 ## Scale Axis
 
 Tritone Axis is the line between Scale Root Note and Tritone
@@ -353,5 +460,3 @@ Locrian: 0 1 3 5 6 8 10
 0 - 7 = 5
 6 + ( 6 - 7 ) = 5
 ~~~
-
----

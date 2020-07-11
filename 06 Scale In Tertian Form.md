@@ -1,5 +1,18 @@
 # Scale In Tertian Form
 
+## Tertian Form Notation
+
+T(Lydian)
+
+`0 2 4 5 7 9 11`
+
+~~~
+0 4 7 11 2 6 9
+0 1 2 3  4 5 6
+~~~
+
+`0 4 7 2` > `0124`
+
 ## Pure Tertian Scale (PTS)
 
 ### Properties Of PTS
