@@ -561,3 +561,45 @@ Negative Tonnetz
 0 5 t 3 8 1 6 e 4 9 2 7 0 5 t 3 8 1 6 e 4 9 2 7 0
  3 8 1 6 e 4 9 2 7 0 5 t 3 8 1 6 e 4 9 2 7 0 5 t 
 ~~~
+
+
+## Function Axis System
+
+`0` as Tonic
+
+~~~
+Tonic              Subtonic           Dominant
+
+Primary Secondary  Primary Secondary  Primary Secondary
+
+T1      T2         S1      S2         D1      D2
+
+0 6     3 9        5 11    2 8        7 1     4 10 
+~~~
+
+~~~
+0  1  2  3  4  5  6  7  8  9  10 11
+T1 D1 S2 T2 D2 S1 T1 D1 S2 T2 D2 S1
+
+0  7  2  9  4  11 6  1  8  3  10 5
+T1 D1 S2 T2 D2 S1 T1 D1 S2 T2 D2 S1
+~~~
+
+~~~
+        0                
+    11     1        
+  10          2     
+9               3  
+  8           4   
+     7     5       
+        6         
+        
+
+        0
+     5     7
+  10          2
+3               9
+  8           4
+     1     11
+        6
+~~~
