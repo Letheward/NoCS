@@ -1,6 +1,6 @@
 # Lydian Chords
 
-> Chords are related to Scale 
+> Chords are related to Scales
 
 > As part of different sequence of a Scale
 

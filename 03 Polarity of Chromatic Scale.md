@@ -8,17 +8,19 @@ LyCS or LoCS can be slice into Lydian and Locrian
 
 - Lydian Chromatic Scale
 
-| Note    | 1 5 2 6 3 7 b5 |b2 b6 b3 b7 4 |
-| -       | -              | -            |
-| Lydian  | 0 7 2 9 4 11 6 |              |
-| Locrian | 0 6            | 1  8  3 10 5 |                     
+~~~
+Note    | 1  5  2  6  3  7  b5 | b2 b6 b3 b7 4 |
+Lydian  | 0  7  2  9  4  11 6  |               |
+Locrian | 0                 6  | 1  8  3  10 5 |                     
+~~~
 
 - Locrian Chromatic Scale
 
-| Note    | 1 4 b7 b3 b6 b2 b5 | 7  3 6 2 5 |
-| -       | -                  | -          |
-| Locrian | 0 5 10 3  8  1  6  |            |
-| Lydian  | 0 6                | 11 4 9 2 7 |
+~~~
+Note    | 1  4  b7 b3 b6 b2 b5 | 7  3  6  2  5 |
+Locrian | 0  5  10 3  8  1  6  |               |
+Lydian  | 0                 6  | 11 4  9  2  7 |
+~~~
 
 > Thus, we can create Polarity for Chromatic Scale
 
@@ -28,6 +30,8 @@ Locrian: `-`
 ---
 
 ## Polarity Label
+
+TODO
 
 ~~~
 0 7 2 9 4 11 6
@@ -39,13 +43,13 @@ Locrian: `-`
 
 - Dorian 
 
-`0 2 3 5 7 9 10` > `0 7 2 9  0 5 10 3`
+`0 2 3 5 7 9 10` > `0 7 2 9 - 0 5 10 3`
 
 `0123-0123`
 
 - Random Set
 
-`0 1 6 7 8 10` > `0 7 6   0 10 8 1 6`
+`0 1 6 7 8 10` > `0 7 6 - 0 10 8 1 6`
 
 `016-02456`
 
@@ -55,7 +59,7 @@ the reverse
 
 `025-0134`
 
-`0 2 11    0 5 3 8`
+`0 2 11 - 0 5 3 8`
 
 `0 2 3 5 8 11`
 
@@ -63,7 +67,7 @@ the reverse
 
 `0235-0235`
 
-`0 2 9 11  0 10 3 1`
+`0 2 9 11 - 0 10 3 1`
 
 `0 1 2 3 9 10 11`
 

@@ -44,27 +44,31 @@
 
 - LyCS Ascended
 
-| Scale             | 0 | 1 | 2 | 3 | 4 | 5 | 6 | Mode Degree |
-| -                 | - | - | - | - | - | - | - | :-:         |
-| Lydian Augmented  | 0 | 2 | 4 | 6 | 8 | 9 | 11| 0           |
-| Altered Scale     | 0 | 1 | 3 | 4 | 6 | 8 | 10| 1           |
-| Lydian Dominant   | 0 | 2 | 4 | 6 | 7 | 9 | 10| 4           |
-| Melodic Minor     | 0 | 2 | 3 | 5 | 7 | 9 | 11| 3           |
-| Mixolydian b6     | 0 | 2 | 4 | 5 | 7 | 8 | 10| 5           |
-| Dorian b2         | 0 | 1 | 3 | 5 | 7 | 9 | 10| 6           |
-| Locrian Natural 2 | 0 | 2 | 3 | 5 | 6 | 8 | 10| 3           |
+~~~
+Scale              0  1  2  3  4  5  6    Mode Degree 
+
+Lydian Augmented   0  2  4  6  8  9  11   0            
+Altered Scale      0  1  3  4  6  8  10   1            
+Lydian Dominant    0  2  4  6  7  9  10   4            
+Melodic Minor      0  2  3  5  7  9  11   3            
+Mixolydian b6      0  2  4  5  7  8  10   5            
+Dorian b2          0  1  3  5  7  9  10   6            
+Locrian Natural 2  0  2  3  5  6  8  10   3            
+~~~
 
 - Scale Ascended
 
-| Scale             | 0 | 1 | 2 | 3 | 4 | 5 | 6 | LyCS Degree |
-| -                 | - | - | - | - | - | - | - | :-:         |
-| Lydian Augmented  | 0 | 2 | 4 | 6 | 8 | 9 | 11| 0           |
-| Lydian Dominant   | 0 | 2 | 4 | 6 | 7 | 9 | 10| 2           |
-| Mixolydian b6     | 0 | 2 | 4 | 5 | 7 | 8 | 10| 4           |
-| Locrian Natural 2 | 0 | 2 | 3 | 5 | 6 | 8 | 10| 6           |
-| Altered Scale     | 0 | 1 | 3 | 4 | 6 | 8 | 10| 1           |
-| Melodic Minor     | 0 | 2 | 3 | 5 | 7 | 9 | 11| 3           |
-| Dorian b2         | 0 | 1 | 3 | 5 | 7 | 9 | 10| 5           |
+~~~
+Scale              0  1  2  3  4  5  6    LyCS Degree
+
+Lydian Augmented   0  2  4  6  8  9  11   0          
+Lydian Dominant    0  2  4  6  7  9  10   2          
+Mixolydian b6      0  2  4  5  7  8  10   4          
+Locrian Natural 2  0  2  3  5  6  8  10   6          
+Altered Scale      0  1  3  4  6  8  10   1          
+Melodic Minor      0  2  3  5  7  9  11   3          
+Dorian b2          0  1  3  5  7  9  10   5          
+~~~
 
 ~~~
 7 * 0             = 0

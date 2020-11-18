@@ -273,15 +273,17 @@ Form Locrian: 0 1 3 5 6 8 10
 
 > Up a Fifth (`7`) every time
 
-| Scale      | 0 | 1 | 2 | 3 | 4 | 5 | 6 | LyCS Degree |
-| -          | - | - | - | - | - | - | - | :-:         |
-| Lydian     | 0 | 2 | 4 | 6 | 7 | 9 | 11| 0           |
-| Ionian     | 0 | 2 | 4 | 5 | 7 | 9 | 11| 1           |
-| Mixolydian | 0 | 2 | 4 | 5 | 7 | 9 | 10| 2           |
-| Dorian     | 0 | 2 | 3 | 5 | 7 | 9 | 10| 3           |
-| Aeolian    | 0 | 2 | 3 | 5 | 7 | 8 | 10| 4           |
-| Phrygian   | 0 | 1 | 3 | 5 | 7 | 8 | 10| 5           |
-| Locrian    | 0 | 1 | 3 | 5 | 6 | 8 | 10| 6           |
+~~~
+Scale       0  1  2  3  4  5  6    LyCS Degree 
+
+Lydian      0  2  4  6  7  9  11   0           
+Ionian      0  2  4  5  7  9  11   1           
+Mixolydian  0  2  4  5  7  9  10   2           
+Dorian      0  2  3  5  7  9  10   3           
+Aeolian     0  2  3  5  7  8  10   4           
+Phrygian    0  1  3  5  7  8  10   5           
+Locrian     0  1  3  5  6  8  10   6           
+~~~
 
 - Lydian:
 
@@ -406,15 +408,16 @@ Form Locrian: 0 1 3 5 6 8 10
 
 > Up a Fourth (`5`) every time
 
-| Scale      | 0 | 1 | 2 | 3 | 4 | 5 | 6 | LoCS Degree |
-| -          | - | - | - | - | - | - | - | :-:         |
-| Locrian    | 0 | 1 | 3 | 5 | 6 | 8 | 10| 0           |
-| Phrygian   | 0 | 1 | 3 | 5 | 7 | 8 | 10| 1           |
-| Aeolian    | 0 | 2 | 3 | 5 | 7 | 8 | 10| 2           |
-| Dorian     | 0 | 2 | 3 | 5 | 7 | 9 | 10| 3           |
-| Mixolydian | 0 | 2 | 4 | 5 | 7 | 9 | 10| 4           |
-| Ionian     | 0 | 2 | 4 | 5 | 7 | 9 | 11| 5           |
-| Lydian     | 0 | 2 | 4 | 6 | 7 | 9 | 11| 6           |
+~~~
+Scale       0  1  2  3  4  5  6    LoCS Degree 
+Locrian     0  1  3  5  6  8  10   0
+Phrygian    0  1  3  5  7  8  10   1
+Aeolian     0  2  3  5  7  8  10   2
+Dorian      0  2  3  5  7  9  10   3
+Mixolydian  0  2  4  5  7  9  10   4
+Ionian      0  2  4  5  7  9  11   5
+Lydian      0  2  4  6  7  9  11   6
+~~~
 
 - Locrian:
 

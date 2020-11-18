@@ -80,6 +80,16 @@ C2, G3, E4: [20, 37, 44]
 A4, C5, E5: [00, 03, 07] (A4 = 00)
 ~~~
 
+## Set Space
+
+- Centric Set Space
+
+TODO
+
+- Acentric Set Space
+
+TODO
+
 ## Doing Math 
 
 > The Nature of Chromatic Scale is the nature of number `12`
