@@ -1,101 +1,6 @@
-# Interval Vector
+# Appendix 03
 
-## Unordered Interval Vector (UIV)
-
-UIV is the normal Interval Vector
-
-- Computation Method
-
-`S = {0, p1, p2, ... pn}`
-
-~~~
-p1-0 p2-0 ... pn-0
-
-p2-p1 p3-p1 p4-p1 ... pn-p1
-
-...
-
-p(n-1)-p(n-2) pn-p(n-2)
-
-pn-p(n-1)
-~~~
-
-`v1` = Total number of `1` and `11`  
-`v2` = Total number of `2` and `10`  
-`v3` = Total number of `3` and `9`  
-`v4` = Total number of `4` and `8`  
-`v5` = Total number of `5` and `7`  
-`v6` = Total number of `6`
-
-`UIV(S) = {v1, v2, v3, v4, v5, v6}`
-
-## Ordered Interval Vector (OIV)
-
-OIV is the new Interval Vector
-
-- Computation Method
-
-`S = {0, p1, p2, ... pn}`
-
-~~~
-p1-0 p2-0 ... pn-0
-
-p2-p1 p3-p1 p4-p1 ... pn-p1
-
-...
-
-p(n-1)-p(n-2) pn-p(n-2)
-
-pn-p(n-1)
-~~~
-
-`v1` = Total number of `1`  
-`v2` = Total number of `2`  
-`v3` = Total number of `3`  
-`v4` = Total number of `4`  
-`v5` = Total number of `5`  
-`v6` = Total number of `6`  
-`v7` = Total number of `7`  
-`v8` = Total number of `8`  
-`v9` = Total number of `9`  
-`v10` = Total number of `10`  
-`v11` = Total number of `11`
-
-`OIV(S) = {v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11}`
-
-## Polarity Interval Vector (PIV)
-
-PIV is the new Interval Vector in Chromatic Polarity Order
-
-- Computation Method
-
-`S = {0, p1, p2, ... pn}`
-
-~~~
-p1-0 p2-0 ... pn-0
-
-p2-p1 p3-p1 p4-p1 ... pn-p1
-
-...
-
-p(n-1)-p(n-2) pn-p(n-2)
-
-pn-p(n-1)
-~~~
-
-`v1` = Total number of `1`  
-`v2` = Total number of `2`  
-`v3` = Total number of `3`  
-`v4` = Total number of `4`  
-`v5` = Total number of `5`  
-`v6` = Total number of `6`  
-`v7` = Total number of `7`  
-`v8` = Total number of `8`  
-`v9` = Total number of `9`  
-`v10` = Total number of `10`  
-`v11` = Total number of `11`
-
-`PIV(S) = {v7, v2, v9, v4, v11, v6, v1, v8, v3, v10, v5}`
+About Interval Vectors.
 
 ## Examples
 
@@ -236,7 +141,6 @@ pn-p(n-1)
 
 1 
 ~~~
-
 
 `UIV(Chromatic) = cccccc`
 

@@ -1,25 +1,120 @@
-# Lydian Chords
+# Appendix 04
 
-> Chords are related to Scales
+About certain Sets.
 
-> As part of different sequence of a Scale
+## Diatonic Modes
 
-`d`:Chord degree
-
-`t`:Chord tone
-
-Lydian:
+### Scale Ascended
 
 ~~~
-d t
-0 0  7 * 0 = 0
-1 1  7 * 2 = 2
-2 2  7 * 4 = 4
-3 3  7 * 6 = 6
-4 4  7 * 1 = 7
-5 5  7 * 3 = 9
-6 6  7 * 5 = 11
+Scale        0  1  2  3  4  5  6     Brightness
+ 
+Ionian       0  2  4  5  7  9  11    2          
+Dorian       0  2  3  5  7  9  10    4          
+Phrygian     0  1  3  5  7  8  10    6          
+Lydian       0  2  4  6  7  9  11    1          
+Mixolydian   0  2  4  5  7  9  10    3          
+Aeolian      0  2  3  5  7  8  10    5          
+Locrian      0  1  3  5  6  8  10    7          
 ~~~
+
+### Brightness Descended
+
+~~~
+Scale        0  1  2  3  4  5  6     Mode Degree
+
+Lydian       0  2  4  6  7  9  11    4          
+Ionian       0  2  4  5  7  9  11    1          
+Mixolydian   0  2  4  5  7  9  10    5          
+Dorian       0  2  3  5  7  9  10    2          
+Aeolian      0  2  3  5  7  8  10    6          
+Phrygian     0  1  3  5  7  8  10    3          
+Locrian      0  1  3  5  6  8  10    7          
+~~~
+
+### Mirror Scale (Negative Scale)
+
+- Lydian & Locrian
+
+~~~
+Scale        0   1   2   3   4   5   6   0    Direction 
+
+Lydian       0   2   4   6   7   9   11  0              
+             0  +2  +2  +2  +1  +2  +2  +1    >         
+            -2  -2  -2  -1  -2  -2  -1   0    <         
+
+Locrian      0   1   3   5   6   8   10  0              
+             0  +1  +2  +2  +1  +2  +2  +2    >         
+            -1  -2  -2  -1  -2  -2  -2   0    <         
+~~~
+
+- Ionian & Phrygian
+
+~~~
+Scale        0   1   2   3   4   5   6   0    Direction
+
+Ionian       0   2   4   5   7   9   11  0             
+             0  +2  +2  +1  +2  +2  +2  +1    >    
+            -2  -2  -1  -2  -2  -2  -1   0    <
+
+Phrygian     0   1   3   5   7   8   10  0        
+             0  +1  +2  +2  +2  +1  +2  +2    >   
+            -1  -2  -2  -2  -1  -2  -2   0    <   
+~~~
+
+- Mixolydian & Aeolian
+
+~~~
+Scale        0   1   2   3   4   5   6   0    Direction 
+
+Mixolydian   0   2   4   5   7   9   10  0        
+             0  +2  +2  +1  +2  +2  +1  +2    >   
+            -2  -2  -1  -2  -2  -2  -2   0    <   
+
+Aeolian      0   2   3   5   7   8   10  0        
+             0  +2  +1  +2  +2  +1  +2  +2    >   
+            -2  -1  -2  -2  -1  -2  -2   0    <   
+~~~
+
+- Dorian & Itself
+
+~~~
+Scale        0   1   2   3   4   5   6   0    Direction 
+
+Dorian       0   2   3   5   7   9   10  0              
+             0  +2  +1  +2  +2  +2  +1  +2    >         
+            -2  -1  -2  -2  -2  -1  -2   0    <         
+~~~
+
+### Interval Vector
+
+- Any Lydian Mode
+
+~~~
+PCI         1 2 3 4 5 6
+Occurrence  2 5 4 3 6 1 
+~~~
+
+- Relation to LyCS
+
+~~~
+Occurrence   6   5   4   3   2   1
+
+PCI          5   2   3   4   1   6
+LyCS Degree  1   2   3   4   5   6
+Note         7   2   9   4   11  6
+~~~
+
+- Relation to LoCS
+
+~~~
+Occurrence   6   5   4   3   2   1 
+
+PCI          5   2   3   4   1   6 
+LoCS Degree  0   11  10  9   8   7 
+Note         7   2   9   4   11  6 
+~~~
+
 
 ## Tertian Sequence
 
@@ -476,130 +571,4 @@ Dorian     m13         0  3 7 10 2 5 9  0    0 4 7 11 2 6 9  M13#11
 Aeolian    m13b13      0  3 7 10 2 5 8  0    0 4 7 11 2 5 9  M13
 Phrygian   m13b13b9    0  3 7 10 1 5 8  0    0 4 7 10 2 5 9  13
 Locrian    m13b13b9b5  0  3 6 10 1 5 8  0    0 3 7 10 2 5 9  m13
-~~~
-
----
-
-## Chained Chords 
-
-In 7-Note Scales, Chords can be chained to create the full Tertian Sequence (13th Chord)
-
-- Triads
-
-Lydian
-~~~
-0 4 7 11 2 6 9
-0 1 2 3  4 5 6
-0 2 4 6  1 3 5
-
-0 4 7  7 11 2  2 6 9
-0 1 2  2 3  4  4 5 6
-0 2 4  4 6  1  1 3 5
-~~~
-
-Ionian
-~~~
-0 4 7 11 2 5 9
-0 1 2 3  4 5 6
-0 2 4 6  1 3 5
-
-IV     I      V
-5 9 0  0 4 7  7 11 2
-5 6 0  0 1 2  2 3  4
-3 5 0  0 2 4  4 6  1
-~~~
-
-- Seventh Chords
-
-Lydian
-~~~
-0 4 7 11 2 6 9
-0 1 2 3  4 5 6
-0 2 4 6  1 3 5
-
-0 4 7 11   11 2 6 9
-0 1 2 3    3  4 5 6
-0 2 4 6    6  1 3 5
-~~~
-
-Ionian
-
-~~~
-0 4 7 11 2 5 9
-0 1 2 3  4 5 6
-0 2 4 6  1 3 5
-
-IMaj7     VIIm7b5
-0 4 7 11  11 2 5 9
-0 1 2 3   3  4 5 6      
-0 2 4 6   6  1 3 5
-~~~
-
-## Tertian Lydian Chromatic Scales
-
-Tertian Lydian Chromatic Scales are closely related to Tonnetz
-
-Upper one is Minor based, lower one is Major based
-
-`7 = 3 + 4`
-~~~
- 3 t 5 0 7 2 9 4 e 6 1 8 3 t 5 0 7 2 9 4 e 6 1 
-0 7 2 9 4 e 6 1 8 3 t 5 0 7 2 9 4 e 6 1 8 3 t 5
- 4 e 6 1 8 3 t 5 0 7 2 9 4 e 6 1 8 3 t 5 0 7 2
-~~~
-
-cover all Major and Minor Triads in every key
-
-## Tertian Locrian Chromatic Scales
-
-Negative Tonnetz
-
-`5 = 2 + 3`
-
-~~~
- 2 7 0 5 t 3 8 1 6 e 4 9 2 7 0 5 t 3 8 1 6 e 4 9 
-0 5 t 3 8 1 6 e 4 9 2 7 0 5 t 3 8 1 6 e 4 9 2 7 0
- 3 8 1 6 e 4 9 2 7 0 5 t 3 8 1 6 e 4 9 2 7 0 5 t 
-~~~
-
-
-## Function Axis System
-
-`0` as Tonic
-
-~~~
-Tonic              Subtonic           Dominant
-
-Primary Secondary  Primary Secondary  Primary Secondary
-
-T1      T2         S1      S2         D1      D2
-
-0 6     3 9        5 11    2 8        7 1     4 10 
-~~~
-
-~~~
-0  1  2  3  4  5  6  7  8  9  10 11
-T1 D1 S2 T2 D2 S1 T1 D1 S2 T2 D2 S1
-
-0  7  2  9  4  11 6  1  8  3  10 5
-T1 D1 S2 T2 D2 S1 T1 D1 S2 T2 D2 S1
-~~~
-
-~~~
-        0                
-    11     1        
-  10          2     
-9               3  
-  8           4   
-     7     5       
-        6         
-        
-
-        0
-     5     7
-  10          2
-3               9
-  8           4
-     1     11
-        6
 ~~~

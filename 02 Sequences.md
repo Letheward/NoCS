@@ -111,6 +111,27 @@ Octave   0   0   1   1   1   2   2   2   3   3   4   4
 
 ### Cycles In Scale
 
+TODO
+
+If Cycle Interval is relative prime to the number of elements in set, then the Cycle will contain all the elements. Otherwise, it won't.
+
+~~~
+7 note scale
+0  1  3  4  6  8  10
+interval 2
+0  3  6  10 1  4  8
+7 and 2 relative prime
+
+6 note scale
+0 2 4 6 8 10
+interval 2
+0 4 8, 2 6 10
+interval 3
+0 6, 2 8, 4 10
+~~~
+
+---
+
 7 Note Scale in different orders
 
 ~~~

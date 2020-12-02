@@ -1,4 +1,6 @@
-# Lydian & Locrian
+# Appendix 00
+
+Initial derivations on some phenomena that spark the whole project.
 
 ## Properities of IC`5` and IC`7`
 
