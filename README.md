@@ -12,13 +12,15 @@ Any improvement is welcome, though as of now rewriting obscure drafts and solvin
 
 A document should stay roughly under 500 lines.
 
+Only leave essential examples in main body. (Move other data to Appendix when draft is not needed)
+
 Try to avoid H4 ("####") and above. If really needed, consider creating a new document.
 
 Avoid extended Markdown features in Favored Standards as possible.
 
-Avoid Pictures, Markdown Tables and use "~~~" and monospaced ASCII characters to draw them. (For easier editing, offline reading and compatibility)
+For large pile of math or logical derivation, use "~~~" and monospaced ASCII characters.
 
-For large pile of math or logical derivation, also use "~~~" and monospaced ASCII characters.
+Avoid Pictures and Markdown Tables, use "~~~" and ASCII art to draw them. (For easier editing, offline reading and compatibility)
 
 Conventions:
 
