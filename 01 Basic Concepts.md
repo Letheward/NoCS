@@ -1,15 +1,18 @@
 # Basic Concepts
 
-## Pitch as Number
+## Numbers as Pitches
 
 > What's the distance between `C` and `E` ?   
-
-> A Major Third apart, that's because we memorize it that way.
-
+>
 > What about `G` and `B` ? `F#` and `A#` ? `Db` and `F` ?
+>
+> Why adding Fourths and Fifths won't give us Ninths?
 
-Naming Notes with letters is confusing and hard to calculate,  
-instead we'll using **Mod 12** and **Base 12** Numbers.
+Naming Pitches with letters and accidentals is sort of confusing,  
+and we can't really do math with them.
+
+Instead we'll use **Mod 12** and **Base 12** Numbers.
+
 
 - Mod 12 number can represent Pitch Class
 
@@ -21,6 +24,8 @@ C  Db D  Eb E  F  Gb G  Ab A  Bb    B
 
 By default `C = 0` (Mod 12)
 
+This is also called *Integer Notation*.
+
 - Base 12 number can represent Absolute Pitch
 
 ~~~
@@ -30,12 +35,15 @@ B3: 3E
 F#10: T6
 ~~~
 
-By default `C0 = 00` (Base 12).  
+By default `C0 = 00` (Base 12).
+
+This is similiar to Notes in MIDI, but we can read octaves and note names right away.
 
 ---
 
-In 12TET, Transposing won't change the relations of Notes,    
+In 12TET, Transposing won't change the frequency relationship between Notes,    
 so Mod 12 and Base 12 in relative sense is also helpful.  
+
 When doing this we may add `Note = 0` (Mod 12) and `Note = 00` (Base 12). 
 
 For example:
@@ -80,15 +88,92 @@ C2, G3, E4: [20, 37, 44]
 A4, C5, E5: [00, 03, 07] (A4 = 00)
 ~~~
 
-## Set Space
+## Orders in Sets
 
-- Centric Set Space
+> A Set can be Ordered or Unordered
 
-TODO
+- Ordered Set:
 
-- Acentric Set Space
+Order matters. For Example, `{0, 4, 7}` is different from `{4, 7, 0}`.
 
-TODO
+Therefore, an Ordered Set will have an index:
+
+~~~
+Set:
+{0, 2, 4, 5, 7, 9, 11}
+Index:
+{0, 1, 2, 3, 4, 5, 6}
+
+Set:
+{0, 4, 7}
+Index:
+{0, 1, 2}
+~~~
+
+Ordered Sets are useful in Tonal Music Analysis.
+
+In context, Tonal Center or Chord Root often has index `0`, but the note at index `0` is not always `0`.
+
+- Unordered Set:
+
+Order doesn't matters. For Example, `{0, 4, 7}` is the same as `{4, 7, 0}` or `{7, 0, 4}`.
+
+An Unordered Set cannot have an index.
+
+Unordered Sets are useful in Post-Tonal Music Analysis.
+
+## Set Operations:
+
+- Reorder by Pitch Value
+
+~~~
+Before:
+{3, 5, 1, 9, 0, 6, 8}
+After:
+{0, 1, 3, 5, 6, 8, 9}
+~~~
+
+- Shift Indexes
+
+~~~
+Before:
+{0, 2, 4, 6, 7, 9, 11}
+Index:
+{0, 1, 2, 3, 4, 5, 6}
+
+After:
+{2, 4, 6, 7, 9, 11, 0}
+Index:
+{1, 2, 3, 4, 5, 6, 0}
+~~~
+
+- Reorder by Index Patterns
+
+~~~
+Before:
+{0, 2, 4, 6, 7, 9, 11}
+Index:
+{0, 1, 2, 3, 4, 5, 6}
+
+After:
+{0, 4, 7, 11, 2, 6, 9}
+Index:
+{0, 2, 4, 6, 1, 3, 5}
+~~~
+
+- Reorder by Reference Index Value
+
+~~~
+Reference:
+{0, 7, 2, 9, 4, 11, 6, 1, 8, 3, 10, 5}
+Index:
+{0, 1, 2, 3, 4, 5,  6, 7, 8, 9, 10, 11}
+
+Before:
+{0, 1, 4, 5, 7, 8, 10}
+After:
+{0, 7, 4, 11, 1, 8, 5}
+~~~
 
 ## Doing Math 
 
@@ -123,7 +208,7 @@ D - 7 = 2 - 7 = 7 (Mod 12) G
 Dm7 - D: {2, 5, 9, 0} - 2 = {0, 3, 7, 10} (D = 0) 
 General m7 Chord 
 
-Gm - C (G = 0): {0, 3, 7} - 5 = {7, 10, 2} (C = 0)
+Gm (G = 0) - C : {0, 3, 7} - 5 = {7, 10, 2} (C = 0)
 Gm in C context
 ~~~
 

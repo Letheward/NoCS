@@ -22,7 +22,7 @@
 
 --- 
 
-## Lydian Augmented Modes Analyze
+## Lydian Augmented Modes Analysis
 
 ---
 
@@ -110,7 +110,32 @@ Dorian b2          0  1  3  5  7  9  10   5
 7 * 0     - 7 * 2 = 7 * 5 - 1             = 10
 ~~~
 
-## Chord Progression Analyze using PI
+## Mystic Chord Analysis
+
+Mystic Chord:
+~~~
+{0, 6, 10, 4, 9, 2}
+to
+{0, 2, 4, 6, 9, 10}
+~~~
+
+Not much.
+
+But if we add a `7`:
+
+~~~
+{0, 2, 4, 6, 7, 9, 10}
+index:
+{0, 1, 2, 3, 4, 5, 6}
+
+{0, 6, 10, 4, 9, 2}:
+index:
+{0, 3, 6, 2, 5, 1}
+~~~
+
+A Quartal Sequence!
+
+## Chord Progression Analysis using PI
 
 Major 251: `+ 2 => + 5 => + 8`
 
@@ -156,4 +181,53 @@ PI row
 + 8
 - 7
 ...
+~~~
+
+## Index Transform
+
+- Set to Index
+
+~~~
+Reference:
+{0, 7, 2, 9, 4, 11, 6, 1, 8, 3, 10, 5}
+Index:
+{0, 1, 2, 3, 4, 5,  6, 7, 8, 9, 10, 11}
+
+Set:
+{0, 7, 4, 11, 1, 8, 5}
+Map to Index of Reference Set:
+{0, 1, 4, 5, 7, 8, 11}
+~~~
+
+- Index to Set
+
+~~~
+Reference:
+{0, 7, 2, 9, 4, 11, 6, 1, 8, 3, 10, 5}
+Index:
+{0, 1, 2, 3, 4, 5,  6, 7, 8, 9, 10, 11}
+
+Set:
+{0, 2, 9, 11}
+to:
+{0, 2, 3, 5}
+~~~
+
+- Reverse Transform
+
+~~~
+{0, 2, 6, 7, 8, 10, 11}
+{0, 1, 2, 3, 4, 5, 6}
+
+Set:
+{0, 6, 8, 10}
+index:
+{0, 2, 4, 5}
+
+reverse index:
+{0, 5, 3, 2}
+Set:
+{0, 10, 7, 6}
+to
+{0, 6, 7, 10}
 ~~~
