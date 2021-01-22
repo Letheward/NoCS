@@ -149,6 +149,8 @@ Locrian    m13b13b9b5  0  3 6 10 1 5 8  0    0 3 7 10 2 5 9  m13
 
 ## Chained Chords 
 
+### Chained Chords in Scales
+
 In 7-Note Scales, Chords can be chained to create the full Tertian Sequence (13th Chord)
 
 - Triads
@@ -202,11 +204,40 @@ IMaj7     VIIm7b5
 0 2 4 6   6  1 3 5
 ~~~
 
-## Tertian Lydian Chromatic Scales
+### Chained Chords in Tertian Chromatic Scales
 
-Tertian Lydian Chromatic Scales are closely related to Tonnetz
+TODO
+
+Tertian Chromatic Scales:
+
+~~~
+0  3  6  9  1  4  7  10 2  5  8  11
+0  4  7  10 2  5  8  11 3  6  9  1
+0  4  7  10 2  6  9  1  5  8  11 3
+0  4  8  11 3  7  10 2  6  9  1  5
+~~~
+
+We can start from anywhere and build a chord
+
+`{9, 1, 4, 7}`
+
+And modulate to the next:
+
+`{7, 10, 2, 5}`
+
+To explore the sound of that Tertian Chromatic Scale
+
+---
+
+## Tonnetz and LyCS/LoCS
+
+TODO
+
+Lydian Chromatic Scale is closely related to Tonnetz
 
 Upper one is Minor based, lower one is Major based
+
+- Tonnetz
 
 `7 = 3 + 4`
 ~~~
@@ -217,9 +248,9 @@ Upper one is Minor based, lower one is Major based
 
 cover all Major and Minor Triads in every key
 
-## Tertian Locrian Chromatic Scales
+- Negative Tonnetz
 
-Negative Tonnetz
+Using Locrian Chromatic Scale
 
 `5 = 2 + 3`
 
@@ -229,8 +260,11 @@ Negative Tonnetz
  3 8 1 6 e 4 9 2 7 0 5 t 3 8 1 6 e 4 9 2 7 0 5 t 
 ~~~
 
+We then made chords base on seconds
 
 ## Function Axis System
+
+TODO
 
 `0` as Tonic
 

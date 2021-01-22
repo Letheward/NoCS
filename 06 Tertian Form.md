@@ -1,4 +1,4 @@
-# Scale In Tertian Form
+# Tertian Form
 
 ## Tertian Form Notation
 
@@ -210,6 +210,135 @@ so x = 4, y = 4, z = 0
 Diminished Scale Modes (IV `448444`):  
 `0 1 3 4 6 7 9 10`  
 `1 2 1 2 1 2 1 2`
+
+---
+
+## Tertian Chromatic Scale
+
+> We could try to extend the idea on Chromatic Scale itself.
+
+By definition, A Tertian Chromatic Scale should be a Set with all `12` notes, and every distance to the note at next Index is either `3` or `4`.
+
+We can draw a graph like this, which is a binary tree that some children will have same value:
+~~~
+                      0
+                     / \
+                    3   4
+                   / \ / \
+                  6   7   8
+                 / \ / \ / 
+                9  10  11   0
+                 \ / \ / \
+              0   1   2   3   4
+                 / \ / \ / \
+            3   4   5   6   7   8
+               / \ / \ / \ / \
+          6   7   8   9  10  11   0
+             / \ /     \ / \ / \
+        9  10  11   0   1   2   3   4
+           / \ / \     / \ / \ / \
+      0   1   2   3   4   5   6   7   8
+         / \ / \ / \ / \ / \ / \ / \
+    3   4   5   6   7   8   9  10  11   0
+       / \ / \ / \ / \ /     \ / \ / \
+  6   7   8   9  10  11   0   1   2   3   4
+     / \ /     \ / \ / \     / \ / \ / \
+9  10  11   0   1   2   3   4   5   6   7   8
+~~~
+
+Because it must contain all `12` notes, then the note at every level must be unique,  
+therefore something like `0 3 6 9 0 3 6 9 0 3 6 9` is not valid, as showed in the graph.
+
+Immediately we can see from the graph that the last note can't have a `3` or `4` distance to `0`.
+
+Therefore there can't be a "looping" Tertian Chromatic Scale.
+
+So we can try ignore the last note, see if "non-looping" ones are possible.  
+
+By writing a program that list all possible path and check validity one by one, we find `4` valid paths:
+
+~~~
+0  3  6  9  1  4  7  10 2  5  8  11
+0  4  7  10 2  5  8  11 3  6  9  1
+0  4  7  10 2  6  9  1  5  8  11 3
+0  4  8  11 3  7  10 2  6  9  1  5
+~~~
+
+These Sets are the only `4` Tertian Chromatic Scales (if non-looping is acceptable).
+
+We can see they all have a kind of self symmetry:
+
+~~~
+under list means:
+0 for +3
+1 for +4
+
+0   3   6   9   1   4   7   10  2   5   8   11
+  0   0   0   1   0   0   0   1   0   0   0
+
+0   4   7   10  2   5   8   11  3   6   9   1
+  1   0   0   1   0   0   0   1   0   0   1
+
+0   4   7   10  2   6   9   1   5   8   11  3
+  1   0   0   1   1   0   1   1   0   0   1
+
+0   4   8   11  3   7   10  2   6   9   1   5
+  1   1   0   1   1   0   1   1   0   1   1
+~~~
+
+So their negative sets in reverse order (and making note at index [`0`] = `0`) is themselves:
+
+Start from `0` and use `- 3` or `- 4` instead of `+ 3` or `+ 4`:
+
+~~~
+original:
+0  3  6  9  1  4  7  10 2  5  8  11
+negative version:
+0  9  6  3  11 8  5  2  10 7  4  1
+rearrange:
+1  4  7  10 2  5  8  11 3  6  9  0
+-1:
+0  3  6  9  1  4  7  10 2  5  8  11
+which is the same as itself
+~~~
+
+~~~
+original:
+0  4  7  10 2  5  8  11 3  6  9  1
+negative version:
+0  8  5  2  10 7  4  1  9  6  3  11
+rearrange:
+11 3  6  9  1  4  7  10 2  5  8  0
+-11(or +1):
+0  4  7  10 2  5  8  11 3  6  9  1
+which is the same as itself
+~~~
+
+~~~
+original:
+0  4  7  10 2  6  9  1  5  8  11 3
+negative version:
+0  8  5  2  10 6  3  11 7  4  1  9
+rearrange:
+9  1  4  7  11 3  6  10 2  5  8  0 
+-9(or +3):
+0  4  7  10 2  6  9  1  5  8  11 3
+which is the same as itself
+~~~
+
+~~~
+original:
+0  4  8  11 3  7  10 2  6  9  1  5
+negative version:
+0  8  4  1  9  5  2  10 6  3  11 7
+rearrange:
+7  11 3  6  10 2  5  9  1  4  8  0
+-7(or +5):
+0  4  8  11 3  7  10 2  6  9  1  5
+which is the same as itself
+~~~
+
+---
 
 ## Neo-Riemannian Theory
 
