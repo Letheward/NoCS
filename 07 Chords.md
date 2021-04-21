@@ -1,8 +1,66 @@
 # Chords
 
-> Chords are related to Scales
 
-> As part of different sequence of a Scale
+## Notation
+
+TODO
+
+~~~
+0:47       CMaj
+2:47       DMaj
+
+2          root
+:          divide for clarity
+47         everything except root when root = 0
+
+since chord must have a root, omit root
+
+8:37e26 AbmM9#11
+
+add first element to everything after will get absolute pitch
+
+8:37e26 AbmM9#11
+
+8
+3 + 8 = e
+7 + 8 = 3
+e + 8 = 7
+2 + 8 = t
+6 + 8 = 2
+
+=> {8, 11, 3, 7, 10, 2}
+
+7:36t1   Gm7b5(add b9)
+
+7
+3 + 7 = t
+6 + 7 = 1
+t + 7 = 5
+1 + 7 = 8
+
+=> {7, 10, 1, 5, 8}
+
+and do voice leading for
+{8, 11, 3, 7, 10, 2}
+{7, 10, 1, 5, 8}
+
+order matters
+
+2:237 means "add2"
+
+2:372 means "add9"
+
+can have 0
+
+6:47t02
+
+suggest voicing to have 0 between t and 2
+
+~~~
+
+## Relation to Scale
+
+> Chord as part of different sequence of a Scale
 
 `d`:Chord degree
 
@@ -21,7 +79,7 @@ d t
 6 6  7 * 5 = 11
 ~~~
 
-## Tertian Sequence
+### Tertian Sequence
 
 A Third means `2` in Scale Degree, `4` in LyCS Degree (Mod 7)
 
@@ -53,7 +111,7 @@ d t
 6 5  7 * 3     = 9
 ~~~
 
-## Quartal Sequence
+### Quartal Sequence
 
 A Fourth means `3` in Scale Degree, `6` in LyCS Degree (Mod 7)
 
