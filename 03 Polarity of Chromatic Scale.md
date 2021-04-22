@@ -71,6 +71,60 @@ the reverse
 
 `0 1 2 3 9 10 11`
 
+TODO
+
+~~~
+another method
+
+06 7294e 5t381
+00-00000-00000
+
+0 1 2 3 9 10 11
+
+00-0290e-0t301
+
+except first one, 0 for not having a note
+
+or 
+
+0- -29-e -t3-1
+
+binary:
+
+0 2 3 5 8 11
+
+0 6 7294e 5t381
+10-01001-10010
+
+or
+10-01001-10010
+to decimal
+
+// notice this is backwards
+// because the order is from 0 to 4
+// but numbers started from highest digit 
+10-01001-10010
+        <- from here
+
+actual binary numbers:
+01   10010    01001
+
+=> 1-22-9  // this is unreadable, but may be helpful in calculations
+// or for categorizing
+
+for comparison:
+1-22-9
+1     --------- type, usually 1 or 3, for if note 6 is present
+22    --------- Lydian notes
+9     --------- Locrian notes
+
+22 > 9 (notice here is a assumption that high digit numbers are more "important")
+so overall this set is more lydian
+
+total states:
+4-32-32  // actually, can be remembered
+~~~
+
 ## Weighting
 
 ### Pythagorean tuning
